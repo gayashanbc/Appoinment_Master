@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:context="com.example.calendar.app.MainActivity"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Move Appoinment"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            />
+        <TextView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appoinment list"
+            android:layout_below="@id/text"
+            />
+
+        <TextView
+            android:id="@+id/appid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appoinment Id"
+            android:layout_below="@id/list"
+            />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appid"
+            />
+
+        <TextView
+            android:id="@+id/dd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appoinment New Date"
+            android:layout_below="@id/input"
+            />
+
+        <EditText
+            android:id="@+id/ddinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dd"
+            android:text="dd/mm/yyyy"
+            />
+
+        <Button
+            android:id="@+id/searchbtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="MOVE"
+            android:layout_below="@id/ddinput"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
